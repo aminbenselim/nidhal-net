@@ -6,6 +6,6 @@ tags:
   - face
   - image
 ---
-you can see my face here 
+![lkjl](/static/images/screenshot 2017-11-19 18.42.09.png)
 
-![my face, my face my face my face, my lovely manly face. check it out!](/static/images/screenshot 2017-11-19 18.42.09.png)
+you can see my face here
