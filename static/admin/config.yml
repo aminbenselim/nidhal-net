@@ -5,10 +5,11 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: "static/images" # Folder where user uploaded files should go
+media_folder: "public/static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "blog"
+  - name: "Blog"
     label: "Blog"
     folder: "content/post"
     sort: "date:desc" # Default is title:asc
