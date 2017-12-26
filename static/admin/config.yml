@@ -1,11 +1,12 @@
-
+display_url: https://nidhal.net
 backend:
-  name: git-gateway
+  name: github
   repo: amine-benselim/nidhal-net
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: "static/images" # Folder where user uploaded files should go
+media_folder: "static/images"
+public_folder: "/images"
 
 collections:
   - name: "blog"
@@ -16,7 +17,10 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: Title, name: "title", widget: "string", tagname: "h1"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
       - {label: Slug, name: "slug", widget: "string"}
       - {label: Tags, name: tags, widget: list}
+      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
       - {label: "Body", name: "body", widget: "markdown"}
+    meta:
+      - {label: "SEO Description", name: "description", widget: "text"}
