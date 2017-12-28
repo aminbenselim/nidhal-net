@@ -6,6 +6,6 @@ tags:
   - face
   - image
 ---
-![lkjl](/static/images/screenshot 2017-11-19 18.42.09.png)
+![lkjl](/images/screenshot 2017-11-19 18.42.09.png)
 
 you can see my face here
